@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <title>REPS</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="Imagenes/Favicon_reps.ico"
+    />
+    <link rel="stylesheet" type="text/css" href="CSS/Style.css" /> 
+    <!--EXTERNAL OWL CAROUSEL CSS CDN LINKS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />  
+</head>
+<body class="body">
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top ">
+      <div class="container align-items-end">
+        <!--LOGO-->
+        <a class="navbar-brand fs-4 logo" href="#"><img src="imagenes/LogoRepsPurpura.png" alt="" class=""></a>
+        <!--TOGGLE BTN-->
+        <button 
+          class="navbar-toggler toggler " 
+          type="button" 
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" 
+          aria-controls="offcanvasNavbar"
+        >
+          <div class="togglericonpadre">
+            <span class="navbar-toggler-icon togglericon"></span>
+          </div>
+        </button>
+
+        <!--SideBar-->
+        <div class="sidebar offcanvas offcanvas-start" 
+          tabindex="-1" id="offcanvasNavbar" 
+          aria-labelledby="offcanvasNavbarLabel"
+          >
+          <!--sidebar header-->
+          <div class="offcanvas-header text-white border-bottom align-items-center">
+            <a class="navbar-brand fs-4 logo " href="index.html"><img src="imagenes/Logoreps.png" alt="" class=""></a>
+            <button 
+            type="button" 
+            class="btn-close btn-close-white shadow-none" 
+            data-bs-dismiss="offcanvas" 
+            aria-label="Close"
+            >
+          </button>
+          </div>
+          <!--sidebar body-->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end  fs-5 flex-grow-1 pe-3">
+              <li class="nav-item mx-2">
+                <a class="nav-link negritanav" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link textonavitem" href="planes.html">PLANES</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link textonavitem" href="servicios.html">SERVICIOS</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link textonavitem" href="https://app.clez.co/index.php?r=pagos/pagoPlan&token=3455f86c5252c499b9aca7e92463ef5a&user=&plan=">AFILIATE</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link textonavitem" href="https://secure.clez.co/pay_dev/agenda_online/web/site/login?key=3455f86c5252c499b9aca7e92463ef5a">AUTOGESTION</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link textonavitem" href="https://app.clez.co/index.php?r=campanaactualizar/actualizar_tercero_view&id_landing=131&token=a3d1cd083afdbe3ab1242e14f723c3f7">FREEPASS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>  
+    
+      <!--slider princial -->
+      <div class="slider_dis_grande solo_pc" id="#inicio">
+        <div class="container-fluid ">
+          <div class="sliderprincipal">
+            <div class="row">
+              <div class="col-md-4 mujerhiptrust"></div>
+              <div class="col-md-4 fondoslider">
+                  <div class="text-center listaslider">
+                    <ul class="list-unstyled">
+                      <li class="textoslider">- SIN SOBRECOSTO DE MANTENIMIENTO</li>
+                      <li class="textoslider">- SIN SOBRECOSTO DE MEMBRESÍAS</li>
+                      <li class="textoslider">- SIN CLÁUSULAS DE PERMANENCIA</li>
+                    </ul>
+                </div>
+                <div class="text-center botonslider">
+                  <a href="https://app.clez.co/index.php?r=pagos/pagoPlan&token=3455f86c5252c499b9aca7e92463ef5a&user=&plan="><button type="button" class="btn btn-light botonslider "><b>INSCRÍBETE YA</b></button></a>
+                </div>
+              </div>
+              <div class="col-md-4 mujersonriente"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <div class="slider_dis_pequeño solo_movil">
+      <div class="sliderfake" style="background: url('imagenes/Banner_Responsive.jpg') no-repeat center center/cover; "></div>
+     </div>
+
+      <!--planes-->
+
+      <div class="text-center"><h2 class="titulomorado">NUESTROS PLANES</h2></div>
+      <div class="container-fluid imagenplanes" id=""></div>
+
+
+      <div class="container-fluid" id="planes">
+        <div class="margenplanes">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="tarjetaplanes">
+                <div class="container-fluid titulotarjetaplanes"><p>MENSUAL</p></div>
+                <p class="preciotarjetaplanes">89.000</p>
+                <div class="margencontenido">
+                  <ul class="list-unstyled">
+                    <li>-30 días de acceso ilimitado.</li>
+                    <li>-1 valoración con especialista.</li>
+                  </ul>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-6 text-center">
+                      <a href="planes.html">Más información</a>
+                    </div>
+                    <div class="col-md-6">
+                      <a href="#" class="colorenlace"><button type="button" class="btn btn-ligh botonplanes">COMPRAR</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="tarjetaplanes">
+                <div class="container-fluid titulotarjetaplanes"><p>BIMESTRAL</p></div>
+                <p class="preciotarjetaplanes">159.000</p>
+                <div class="margencontenido">
+                  <ul class="list-unstyled">
+                    <li>-60 días de acceso ilimitado.</li>
+                    <li>-1 valoración con especialista.</li>
+                  </ul>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-6 text-center">
+                      <a href="planes.html">Más información</a>
+                    </div>
+                    <div class="col-md-6">
+                      <a href="#"><button type="button" class="btn btn-ligh botonplanes">COMPRAR</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="tarjetaplanes">
+                <div class="container-fluid titulotarjetaplanes"><p>TRIMESTRAL</p></div>
+                <p class="preciotarjetaplanes">219.000</p>
+                <div class="margencontenido">
+                  <ul class="list-unstyled">
+                    <li>-90 días de acceso ilimitado.</li>
+                    <li>-1 valoración con especialista.</li>
+                  </ul>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-6 text-center">
+                      <a href="planes.html">Más información</a>
+                    </div>
+                    <div class="col-md-6">
+                      <a href="#"><button type="button" class="btn btn-ligh botonplanes">COMPRAR</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <a href="planes.html"><button type="button" class="btn btn-dark BotonOtrosPlanes">OTROS PLANES</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+                
+      <!--descarga nuestra app-->
+      <div class="container-fluid descarga" id="descarga">
+        <div class="container ordendescarga">
+    
+        <div><h2 class="titulodescarga">DESCARGA NUESTRA APP</h2></div>
+      
+        <div class="parrafodescarga"><p>Disfruta ahora mismo de todo el contenido de ayuda para tu entrenamiento, agendamiento en línea y mucho más.</p></div>
+        <a href="PDFS/guiafitsale.pdf" class="subrayadodescarga" style="text-decoration: underline;"><p>Descarga aqui el paso a paso para obtener nuestra app.</p></a>
+        <a href="https://apps.apple.com/us/app/fitsale/id1629137678"><img src="imagenes/appstore.svg" alt="" class="descargaladescarga" ></a>
+        <a href="https://play.google.com/store/apps/details?id=co.clez.fitsaleapp.beta1&hl=es_419&gl=US"><img src="imagenes/playstore.png" alt="" class="descargaladescarga "></a>
+      
+        </div>
+      </div>
+      <!--valoracion-->
+      <div class="container-fluid valoracion" id="">
+        <div class="text-center"><h2 class="titulomorado">VALORACIÓN ANTROPOMÉTRICA</h2></div>
+        <div class="text-center parrafovaloracion"><b>Descubre tu composición corporal con precisión coreana:
+        </b></div>
+        <div class="text-center parrafovaloracion">Confia en nuestra avanzada tecnología de bioimpedancia de origen coreano para obtener</div>
+        <div class="text-center parrafovaloracion">una valoración antropométrica rápida y precisa.</div>
+        
+        <div class="row imagen-central">
+          <div class="row">
+              <div class="col-md-6">
+                <div class="card-mejoras reverse-mejoras">
+                    <div class="d-flex flex-column">
+                      <h2>Conoce tu estado en 15 segundos</h2>
+                      <p>Con nuestro sistema de vanguardia, obtendrás una evaluación completa de tu composición corporal en tan sólo 15 segundos. Una valoración antropométrica rápida y precisa.</p>
+                    </div>
+                    <img src="imagenes/time.png" alt="instalaciones" class="card-img-top">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-mejoras">
+                    <img src="imagenes/folder.png" alt="instalaciones" class="card-img-top">
+                    <div class="d-flex flex-column">
+                      <h2>Descifra tus números clave</h2>
+                      <p>Accede a datos precisos sobre tu índice de masa corporal (IMC), masa muscular y porcentaje de grasa corporal, fundamentales para alcanzar  tus metas.</p>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card-mejoras reverse-mejoras">
+                <div class="d-flex flex-column">
+                  <h2>Impulsa tu condición física</h2>
+                  <p>Realiza valoraciónes periódicas para monitorear tus avances constantemente y de esta forma para poder tomar decisiones que optimicen tu salud y bienestar.</p>
+                </div>
+                <img src="imagenes/pencil.png" alt="instalaciones" class="card-img-top">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-mejoras">
+                <img src="imagenes/diagram.png" alt="instalaciones" class="card-img-top">
+                  <div class="d-flex flex-column">
+                    <h1>Rastrea tu progreso sin límites</h1>
+                    <p>Nuestra app te permitirá llevar un registro detallado de tadas tus valoraciones antropométricas, celebrando cada logro en tu camino hacia la mejor versión de ti.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <!--servicios-->
+      <div class="container-fluid servicios" id="">
+          <div class="text-center"><h2 class="tituloservicios">SERVICIOS</h2></div>
+          <div class="text-center parrafoservicios">Servicios de Vanguardia para tu máximo desempeño</div>
+          <div class=" parrafoservicioschiquito">Sumérgete  en un oasis de entrenamiento de primera clase, diseñado para impulsar tus objetivos más ambiciosos. En REPS, te esperan:</div>
+          <div class="container">
+            <div class="row">
+              <div class="owl-carousel owl-theme">
+                <a href="servicios.html">
+                  <div class="items">
+                    <div class="card-servicios">
+                      <div class="card-body-servicios">
+                        <img src="imagenes/Area de cardio.png" alt="instalaciones" class="card-img-service">
+                        <h1 class="text-center TituloTarjetaIndividual">INSTALACIONES</h1>
+                        <div class="description">
+                          <div>En REPS sabemos que el descanso y la relajación son fundamentales para obtener resultados óptimos en tu entrenamiento.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="servicios.html">
+                  <div class="items">
+                    <div class="card-servicios">
+                      <div class="card-body-servicios">
+                        <img src="imagenes/Entrenador.png" alt="entrenadores" class="card-img-service">
+                        <h1 class="text-center TituloTarjetaIndividual">ENTRENADORES</h1>
+                        <div class="description">En REPS sabemos que el descanso y la relajacion son fundamentales para obtener resultados óptimos en tu entrenamiento.</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="servicios.html">
+                  <div class="items">
+                    <div class="card-servicios">
+                      <div class="card-body-servicios">
+                        <img src="imagenes/Sauna.png" alt="zonas humedas" class="card-img-service">
+                        <h1 class="text-center TituloTarjetaIndividual">ZONAS HUMEDAS</h1>
+                        <div class="description">En REPS sabemos que el descanso y la relajacion son fundamentales para obtener resultados óptimos en tu entrenamiento.</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class=" parrafoservicioschiquito container">Más que un gimnasio, REPS es un estilo de vida. Un ambiente acogedor donde encontrarás la
+            motivación y los recursos necesarios para alcanzar tus metas. ¡Únete a nuestra comunidad y
+            descubre la diferencia!</div>
+          </div>
+      </div>
+</body>
+<!--Footer-->
+<footer class="FOOTER bg-dark text-light pt-0 pb-4">
+  <div class="text-center">
+      <img class="logocentrado" src="imagenes/LogorepsBlanco.png" alt="">
+      <div class="lineafooter"><hr></div>
+  </div>
+  
+  <div class="container">
+  <div class="row">
+    <div class="col-md-4 col-12 mb-12 text-center">
+      <h3 class="nombre_sede">SUBA SALITRE</h3>
+      <ul class="list-unstyled">
+          <li ><a href="https://www.google.com/maps/place/Cra.+92+%23159a-6,+Bogot%C3%A1/@4.7557436,-74.0824823,1123m/data=!3m2!1e3!4b1!4m5!3m4!1s0x8e3f845289efab61:0x1acea5380a2f1312!8m2!3d4.7557383!4d-74.0799074?entry=ttu&g_ep=EgoyMDI0MTAxMy4wIKXMDSoASAFQAw%3D%3D"><b class="direccion_footer">CRA 92 #159A-06</b></a></li>
+          <li class="parrafofooter">+57-301 477 0087</li>
+      </ul>
+      
+      <h3 class="nombre_sede">SANTA ROSITA</h3>
+      <ul class="list-unstyled">
+          <li ><a href="https://www.google.com/maps/place/Cra.+94+%2375-42,+Bogot%C3%A1/@4.7037023,-74.1121857,1124m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8e3f9b4db5f0f80d:0x3b1828ad1d8fc67d!8m2!3d4.703697!4d-74.1096108!16s%2Fg%2F11py_xwkv2?entry=ttu&g_ep=EgoyMDI0MTAxMy4wIKXMDSoASAFQAw%3D%3D"><b class="direccion_footer">CRA 94 #75-42</b></a></li>
+          <li class="parrafofooter">+57-300 880 1888</li>
+      </ul>
+      
+      <h3 class="nombre_sede">CANDELARIA LA NUEVA</h3>
+      <ul class="list-unstyled">
+          <li ><a href="https://www.google.com/maps/place/Cl.+68+Sur+%2345d-14,+Bogot%C3%A1/data=!4m2!3m1!1s0x8e3f9f113ece8d99:0x6bb1d498c457f7cd?sa=X&ved=1t:242&ictx=111"><b class="direccion_footer">CL. 68 SUR #45D-14</b></a></li>
+          <li class="parrafofooter">+57-310 334 5552</li>
+      </ul>
+      </div>
+      <div class="col-md-4 col-12 mb-12 text-center">
+          <h3 class="titulofooter">HORARIOS</h3>
+          <ul class="list-unstyled">
+          <li ><b class="negritafooter">LUNES - VIERNES</b></li>
+          <li class="parrafofooter">5:00AM-10:00PM</li>
+          </ul>
+      
+          <ul class="list-unstyled">
+          <li ><b class="negritafooter">SÁBADOS</b></li>
+          <li class="parrafofooter">6:00AM-5:00PM</li>
+          </ul>
+          <ul class="list-unstyled">
+          <li ><b class="negritafooter">DOMINGOS/FESTIVOS</b></li>
+          <li class="parrafofooter">8:00AM-2:00PM</li>
+          </ul>
+      </div>
+      <div class="col-md-4 col-12 mb-12 text-center">
+      <h3 class="titulofooter">NUESTRA APP</h3>
+      <ul class="list-unstyled">
+          <li><a href="https://apps.apple.com/us/app/fitsale/id1629137678" class="text-light"><img class="descargala" src="imagenes/appstore.svg" alt="appstore"></a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=co.clez.fitsaleapp.beta1&hl=es_419&gl=US" class="text-light"><img class="descargala" src="imagenes/playstore.png" alt="playstore"></a></li>
+      </ul>
+      <div class="row align-items-end">
+          
+          <div class="col-12">
+              <a href="https://www.facebook.com/profile.php?id=100087521105951&mibextid=LQQJ4d" class="text-light" ><img class="iconopequeño" src="imagenes/facebook.png" alt="facebook"></a>
+              <a href="https://www.tiktok.com/@repsgt0?_t=8mDPsg9E8Kj&_r=1" class="text-light" ><img class="iconopequeño" src="imagenes/tiktok.png" alt="tiktok"></a></li>
+              <a href="https://www.instagram.com/reps.4?igsh=NzAyeWl1cjFtN2pv" class="text-light" ><img class="iconopequeño" src="imagenes/instagram.png" alt="instagram"></a>
+          </div>
+  
+      </div>
+      </div>
+  </div>
+  
+  </div>
+</footer>
+</html>
+
+
+<script>
+ $('.owl-carousel') .owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    responsive:{}
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+</script>
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
